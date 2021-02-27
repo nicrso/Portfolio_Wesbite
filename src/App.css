@@ -28,6 +28,216 @@
   color: #61dafb;
 }
 
+.fun-fact {
+  background: white;
+  padding: 10px;
+  margin: 10px;
+  width: 20%;
+  box-shadow: 0px 0px 5px 0px #3F3F3F;
+  -webkit-transition: box-shadow 0.3s ease;
+  -moz-transition: box-shadow 0.3s ease;
+  -o-transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+}
+
+.flex-container, .social-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.social-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.header-img {
+  display: block;
+  height: 275px;
+  width: 275px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: solid 5px #66fcf1;
+  background-origin: border-box;
+}
+
+.flex-container, .social-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.social-container {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.social-box {
+  margin: 5px;
+}
+.name-intro {
+}
+
+.important-text{
+  font-weight : 'bold';
+}
+
+.title-box {
+  width: 45%;
+}
+
+.title-box {
+  padding: 10px;
+  margin: 10px;
+}
+
+.project {
+  background: white;
+  margin: 10px;
+  width: 40%;
+  box-shadow: 0px 0px 5px 0px #3F3F3F;
+  -webkit-transition: box-shadow 0.3s ease;
+  -moz-transition: box-shadow 0.3s ease;
+  -o-transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-title {
+  color: white;
+  display: block;
+  position: relative;
+}
+
+.icon {
+  float: right;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 40px;
+  margin-bottom: 5px;
+}
+
+.project-image {
+  border: solid 1px #000000;
+}
+
+.art-nav {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  margin: 0 auto;
+  float: right;
+}
+
+.art-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  .main-title h1 {
+      padding: 20px;
+  }
+  .art-mobile {
+      display: block;
+      margin-top: -10px;
+  }
+  .art-nav-items {
+      display: none;
+  }
+  .header-name {
+    font-size: 15;
+  }
+}
+
+.art-mobile-items{
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0 auto;
+  border-bottom: 3px solid white;
+}
+
+.bottom-text {
+  font-size: 17
+}
+.project-image, .social-image, .skill-image {
+  width: 80%;
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:  auto;
+  margin-bottom: auto;
+}
+
+.image-container {
+  vertical-align: middle;
+}
+
+.social-image {
+  max-width: 75px;
+}
+
+@media screen and (max-width: 1200px) {
+  .skill-box, .logo-box {
+      width: 40%;
+  }
+  .stack-box, .social-box {
+      width: 25%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .skill-box, .stack-box, .logo-box {
+      width: 90%;
+  }
+  .social-box {
+      width: 40%;
+  }
+  .menu-container {
+      width: 300px
+  }
+  .bottom-text{
+    font-size: 12;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .project, .welcome {
+      width: 90%;
+  }
+}
+
+.welcome-image {
+  object-fit: cover;
+  object-position: 0 0;
+  overflow:hidden;
+  width: 100%;
+  height: 600px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

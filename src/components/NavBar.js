@@ -5,54 +5,43 @@ import { SocialIcon } from "react-social-icons";
 
 export default function NavBar() {
     return (
-        <header className="bg-blue-500">
-            <div className="container mx-auto flex justify-between">
-                <nav className="flex">
-                    <NavLink 
-                        to="/" exact 
-                        className="inflex-flex items-center py-6 px-3 mr-4 text-white hover:text-blue-800 text-4xl font-bold Roboto tracking-widest"
-                        activeClassName="text-white"
-                    >
-                        Nicolas Ouporov
-                    </NavLink>
-                    <NavLink 
-                        to="/post" 
-                        className="inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-blue-800"
-                        activeClassName="text-white bg-blue-700"
-                    > 
-                        Blog Post
-                    </NavLink>
-                    <NavLink 
-                        to="/project" 
-                        className="inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-blue-800"
-                        activeClassName="text-white bg-blue-700"
-                    >
-                        Projects
-                    </NavLink>
-                    <NavLink 
-                        to="/about" 
-                        className="inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-blue-800"
-                        activeClassName="text-white bg-blue-700"
-                    >
-                        About Me!
-                    </NavLink>
+        <header className="fixed bg-white z-50 w-full p-4">
+            <div>
+                <nav className="flex justify-between">
+                    <div>
+                        <NavLink 
+                            to="/" exact 
+                            className="text-black hover:text-grey-500 text-2xl font-bold Roboto"
+                            activeClassName="text-grey-500"
+                        >
+                            NICOLAS OUPOROV
+                        </NavLink>
+                    </div>
+                    <div className="flex items-center">
+                        <NavLink 
+                            to="/work"
+
+                            className="Roboto font-bold text-2xl p-2 text-black hover:text-blue-800"
+                            activeClassName="text-gray-500"
+                        > 
+                            Work
+                        </NavLink>
+                        <NavLink 
+                            to="/project" 
+                            className="Roboto font-bold text-2xl p-2 text-black hover:text-blue-800"
+                            activeClassName="text-gray-500"
+                        >
+                            Projects
+                        </NavLink>
+                        <NavLink 
+                            to="/about" 
+                            className="Roboto font-bold text-2xl p-2 text-black hover:text-blue-800"
+                            activeClassName="text-gray-500"
+                        >
+                            About
+                        </NavLink>
+                    </div>
                 </nav>
-                <div className="inline-flex py-3 px-3 my-6">
-                    <SocialIcon 
-                        url="https://linkedin.com/in/nicolas-ouporov" 
-                        className="mr-4" 
-                        target="_blank"
-                        fgColor="#fff" 
-                        style={{ height: 35, width: 35}}
-                    />
-                    <SocialIcon 
-                        url="https://www.instagram.com/nic.rso/" 
-                        className="mr-4" 
-                        target="_blank" 
-                        fgColor="#fff" 
-                        style={{ height: 35, width: 35}}
-                    />
-                </div>
             </div>
         </header>
     );
