@@ -23,7 +23,7 @@ export default function Project() {
                 <h1 className="text-5xl flex justify-center Roboto">
                     My Projects
                 </h1>
-                <h2 className="text-lg text-grat-600 flex justify-center mb-12">
+                <h2 className="text-lg text-gray-600 flex justify-center mb-12">
                     Welcome to my Projects Page
                 </h2>
                 <section className="grid grid-cols-2 gap-8">
