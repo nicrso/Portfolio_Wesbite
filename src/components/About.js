@@ -1,16 +1,8 @@
 import React, {useEffect, useState } from "react";
-import sanityClient from "../client.js";
-import imageUrlBuilder from "@sanity/image-url";
-import BlockContent from "@sanity/block-content-to-react";
 import headshot from "../frontal.jpg";
 import art from "../art.jpg";
 import dance from "../dance.jpg";
 import bike from "../bike.JPG";
-
-const builder = imageUrlBuilder(sanityClient);
-function urlFor(source) {
-    return builder.image(source)
-}
 
 export default function About() {
 
@@ -51,7 +43,7 @@ export default function About() {
                 <header className="flex full">
                 </header>
                 <h2 className="sm:text-3xl md:text-3xl lg:text-6xl serif italic font-bold text-4xl text-center">Nice to Finally Meet You.</h2>
-                <p className="text-base lg:text-4xl serif text-2xl mt-10 lg:p-10 content-center">
+                <p className="text-base lg:text-4xl serif text-2xl mt-10 md:pl-8 lg:p-8 content-center">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </p>
                 <h2 className="pt-5 pl-10 text-3xl italic serif underline"> </h2>

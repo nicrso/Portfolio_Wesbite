@@ -43,3 +43,10 @@
 .myDIV:hover + .hide {
   display: block;
 }
+
+.grid-item {
+  width: 50%;
+  img {
+    width: 100%;
+  };
+}

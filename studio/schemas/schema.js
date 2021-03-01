@@ -10,8 +10,8 @@ import category from './category'
 import post from './post'
 import project from './project'
 import author from './author'
-import artwork from './ArtSchemas/artwork'
-import photo from './ArtSchemas/photo'
+import artwork from './artwork'
+import photo from './photo'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({

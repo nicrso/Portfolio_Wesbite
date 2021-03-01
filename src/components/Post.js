@@ -9,7 +9,7 @@ export default function Post() {
         sanityClient
             .fetch(`*[_type == "post"]{
                 title,
-                slug,
+
                 mainImage{
                     asset->{
                         _id,

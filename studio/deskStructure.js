@@ -28,5 +28,5 @@ export default () =>
                             .child(S.documentTypeList('photo').title('Photography'))
                 ])
             ),
-        ...S.documentTypeListItems().filter( listItem => !['Artwork'])
+        ...S.documentTypeListItems()
     ])
