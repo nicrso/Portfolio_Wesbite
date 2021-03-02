@@ -12,8 +12,8 @@ export default () =>
                     .items([
                         S.listItem()
                             .title('Design')
-                            .schemaType('post')
-                            .child(S.documentTypeList('post').title('Design')),
+                            .schemaType('design')
+                            .child(S.documentTypeList('design').title('Design')),
                         S.listItem()
                             .title('Conceptual Art')
                             .schemaType('artwork')

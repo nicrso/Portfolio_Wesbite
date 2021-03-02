@@ -12,6 +12,7 @@ import project from './project'
 import author from './author'
 import artwork from './artwork'
 import photo from './photo'
+import design from './design'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -31,5 +32,6 @@ export default createSchema({
     blockContent,
     artwork,
     photo,
+    design,
   ]),
 })

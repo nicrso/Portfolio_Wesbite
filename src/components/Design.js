@@ -1,14 +1,13 @@
 import React, {useEffect, useState } from "react";
-import art from "../art.jpg";
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
 
-export default function Gallery() {
+export default function DesignGallery() {
     const [photoData, setPhoto] = useState(null);
 
     useEffect(() => {
         sanityClient
-            .fetch(`*[_type == "photo"]{
+            .fetch(`*[_type == "design"] | order(order asc) {
                     title,
                     image{
                         asset->{
@@ -25,11 +24,11 @@ export default function Gallery() {
     return (
         <div>
             <body className="pt-20">
-                <div className="altgrid">
-                    {photoData && photoData.map((photo,index) => (
-                        <div className="grid-item p-2">
+                <div className="grid grid-cols-1 lg:grid-cols-2">
+                    {photoData && photoData.map((design,index) => (
+                        <div className="m-10 md:m-30 lg:m-10 shadow-xl">
                         <img 
-                            src={photo.image.asset.url}
+                            src={design.image.asset.url}
                             alt="Photo of Nicolas and his Artwork" 
                         />
                     </div>

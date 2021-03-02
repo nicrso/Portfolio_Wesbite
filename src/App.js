@@ -46,9 +46,9 @@ export default function App() {
 // }
 
 window.onload = () => {
-  const grid = document.querySelector('.altgrid');
+  const gridalt = document.querySelector('.altgrid');
 
-  const masonry = new Masonry(grid, {
+  const masonry = new Masonry(gridalt, {
     itemSelector: '.grid-item',
   });
 };
