@@ -23,6 +23,7 @@ export default function App() {
         <Route component={Post} path='/post' />
         <Route component={Project} path='/project' />
         <Route component={Photography} path='/work/photo' />
+        <Route component={Design} path='/work/design'/> 
         <Route component={Work} path='/work'>
           <Work />
         </Route>
@@ -31,17 +32,18 @@ export default function App() {
   );
 }
 
-function Categories() {
-  let {path, url} = useRouteMatch();
-  return (
-    <BrowserRouter>
-      <Work />
-      <Switch>
-        <Route component={Photography} path={`${path}/:Id`}/>
-      </Switch>
-    </BrowserRouter>
-  )
-}
+// function Categories() {
+//   let {path, url} = useRouteMatch();
+//   return (
+//     <BrowserRouter>
+//       <Work />
+//       <Switch>
+//         <Route component={Photography} path={`${path}/:Id`}/>
+//         <Route component={Design} path={`${path}/:Id`}/>
+//       </Switch>
+//     </BrowserRouter>
+//   )
+// }
 
 window.onload = () => {
   const grid = document.querySelector('.altgrid');
