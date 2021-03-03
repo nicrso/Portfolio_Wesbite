@@ -25,8 +25,8 @@ export default function WorkGrid() {
     }, []);
 
     return (
-        <main className="bg-white min-h-screen p-20">
-            <section className="container mx-auto">
+        <main className="bg-white min-h-screen mx-auto p-2">
+            <section className="container mx-auto pt-20">
                 <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
                     <Link to={"/work/photo"}>
                         <div className="shadow-xl relative text-align:center">

@@ -9,7 +9,7 @@ export default function About() {
 
     return (
         <div>
-            <div className="md:flex content-center justify-between py-20 px-20">
+            <div className="md:flex content-center justify-between py-20 px-5">
                 <div className="md:w-1/2 mb-5 md:mb-0">
                     <div className="flex-auto grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4">
                         <div>
@@ -59,7 +59,7 @@ export default function About() {
                 <h2 className="text-center w-1/2 text-3xl mx-auto serif underline">
                     <em>Resume</em>
                 </h2>
-                <iframe className="p-10" width="100%" height="300%" src="https://drive.google.com/file/d/1ZJfKf1041FWI3sklT2VwlD7fDb9gxjKa/preview"> 
+                <iframe className="p-10" width="100%" height="700" src="https://drive.google.com/file/d/1ZJfKf1041FWI3sklT2VwlD7fDb9gxjKa/preview"> 
                             This browser does not support PDFs. Please download the PDF to view it: Download PDF 
                 </iframe>
             </div>
