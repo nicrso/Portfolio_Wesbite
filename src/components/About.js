@@ -18,7 +18,7 @@ export default function About() {
                                 alt="Head Shot Photo of Nicolas" 
                             /> 
                         </div>
-                        <div>
+                        <div >
                             <img 
                                 src={bike}
                                 alt="Dance Photo of Nicolas" 
@@ -44,15 +44,15 @@ export default function About() {
                 <div className="self-start md:w-1/2 m-8 lg:mt-30">
                     <header className="flex full">
                     </header>
-                    <h2 className="sm:text-3xl md:text-3xl lg:text-6xl serif italic font-bold text-4xl text-center">Nice to Finally Meet You.</h2>
-                    <p className="text-base lg:text-4xl serif text-2xl mt-10 md:pl-8 lg:p-8 content-center">
+                    <div className="text-3xl sm:text-3xl md:text-4xl lg:text-6xl serif italic font-bold text-center">Nice to Finally Meet You.</div>
+                    <div className="text-xl sm:text-xl md:text-2xl lg:text-4xl serif mt-10 md:pl-8 lg:p-8 content-center">
                     Theres a few things you should know about me. I am a rising sophmore at Columbia University interested in mathematics, emerging tech, entrepreneurship, and the arts. I love to learn new skills and am always taking on new small <NavLink 
                                 to="/project" 
                                 className="hover:text-blue-600 underline"
                             >
                                 projects
                             </NavLink>. I have a long history in the performing arts and visual arts, working under institutions such as the <em> Boston Ballet</em> and <em>Young Arts Foundation.</em> I believe that aspects of the arts are present in all fields and I hope to discover these intersections, pushing towards a more authentic, assessible world.   
-                    </p>
+                    </div>
                 </div>
             </div>
             <div>
