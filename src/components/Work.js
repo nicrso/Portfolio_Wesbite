@@ -38,16 +38,16 @@ export default function WorkGrid() {
                             <div className="hide text-center centered text-blue-900 cursive text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Photography</div>
                         </div>
                     </Link>
-                    
-                    <div className="shadow-xl relative text-align:center"> 
-                        <img 
-                            className="myDIV"
-                            src={chair}
-                            alt="Head Shot Photo of Nicolas" 
-                        />
-                        <div className="hide text-center centered text-blue-900 cursive text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Conceptual Art</div>
-                    </div>
-                    
+                    <Link to={"/work/art"}>
+                        <div className="shadow-xl relative text-align:center"> 
+                            <img 
+                                className="myDIV"
+                                src={chair}
+                                alt="Head Shot Photo of Nicolas" 
+                            />
+                            <div className="hide text-center centered text-blue-900 cursive text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Conceptual Art</div>
+                        </div>
+                    </Link>
                     <Link to={"/work/design"}>
                         <div className="shadow-xl relative text-align:center"> 
                             <img 
@@ -58,14 +58,16 @@ export default function WorkGrid() {
                             <div className="hide text-center centered text-blue-900 cursive text-4xl sm:text-6xl md:text-7xl lg:text-8xl">Design</div> 
                         </div>
                     </Link>
-                    <div className="shadow-xl relative text-align:center"> 
-                        <img 
-                            className="myDIV"
-                            src={dance}
-                            alt="Head Shot Photo of Nicolas" 
-                        />
-                        <div className="hide text-center centered text-blue-900 cursive text-4xl sm:text-6xl md:text-7xl lg:text-8xl">Dance</div>
-                    </div>
+                    <Link to={"/work/dance"}>
+                        <div className="shadow-xl relative text-align:center"> 
+                            <img 
+                                className="myDIV"
+                                src={dance}
+                                alt="Head Shot Photo of Nicolas" 
+                            />
+                            <div className="hide text-center centered text-blue-900 cursive text-4xl sm:text-6xl md:text-7xl lg:text-8xl">Dance</div>
+                        </div>
+                    </Link>
                 </section>
             </section>
         </main>

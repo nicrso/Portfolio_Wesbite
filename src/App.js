@@ -23,7 +23,9 @@ export default function App() {
         <Route component={Post} path='/post' />
         <Route component={Project} path='/project' />
         <Route component={Photography} path='/work/photo' />
-        <Route component={Design} path='/work/design'/> 
+        <Route component={Design} path='/work/design'/>
+        <Route component={Conceptual} path='/work/art'/> 
+        <Route component={Dance} path='/work/dance'/>
         <Route component={Work} path='/work'>
           <Work />
         </Route>

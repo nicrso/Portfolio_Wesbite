@@ -24,7 +24,7 @@ export default function Home() {
             <div className="self-start content-center md:w-1/2 ml-10 lg:mt-20">
                 <header className="full">
                     <h2 className="sm:text-3xl md:text-5xl lg:text-8xl serif italic font-bold text-4xl lg:pl-10">Hello!</h2>
-                    <p className="sm:text-2xl md:text-3xl lg:text-5xl serif text-2xl pt-10 lg:pl-10">I'm <em className="text-bold">Nicolas Ouporov:</em>
+                    <p className="sm:text-xl md:text-2xl lg:text-5xl serif text-2xl pt-10 lg:pl-10">I'm <em className="text-bold">Nicolas Ouporov:</em>
                     <br /> A multi-disciplinary artist and student living and working in New York. Currently, I study computer science, mathematics, creative robotics, and economics at Columbia University.  
                     <NavLink 
                             to="/about" 

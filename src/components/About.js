@@ -59,7 +59,7 @@ export default function About() {
                 <h2 className="text-center w-1/2 text-3xl mx-auto serif underline">
                     <em>Resume</em>
                 </h2>
-                <iframe className="p-10" width="100%" height="800px" src="https://drive.google.com/file/d/1ZJfKf1041FWI3sklT2VwlD7fDb9gxjKa/preview"> 
+                <iframe className="p-10" width="100%" height="300%" src="https://drive.google.com/file/d/1ZJfKf1041FWI3sklT2VwlD7fDb9gxjKa/preview"> 
                             This browser does not support PDFs. Please download the PDF to view it: Download PDF 
                 </iframe>
             </div>
