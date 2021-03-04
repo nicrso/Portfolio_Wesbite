@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 export default function Home() {
     return (
         <div className="md:flex items-stretch justify-between pt-24">
-            <div className="w-3/4 md:w-1/2 lg:w-1/2 mx-auto">
+            <div className="w-3/4 md:w-1/2 lg:w-1/2 mx-auto p-8">
                 <img 
                     src={image}
                     alt="Head Shot Photo of Nicolas"

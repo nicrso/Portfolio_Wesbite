@@ -34,23 +34,10 @@ export default function App() {
   );
 }
 
-// function Categories() {
-//   let {path, url} = useRouteMatch();
-//   return (
-//     <BrowserRouter>
-//       <Work />
-//       <Switch>
-//         <Route component={Photography} path={`${path}/:Id`}/>
-//         <Route component={Design} path={`${path}/:Id`}/>
-//       </Switch>
-//     </BrowserRouter>
-//   )
-// }
-
 window.onload = () => {
-  const gridalt = document.querySelector('.altgrid');
+  const grid = document.querySelector('.altgrid');
 
-  const masonry = new Masonry(gridalt, {
+  const masonry = new Masonry(grid, {
     itemSelector: '.grid-item',
   });
 };
