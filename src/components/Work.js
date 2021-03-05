@@ -1,11 +1,10 @@
 import React, { useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
-import headshot from "../frontal.jpg";
-import photo from "./photog.jpg";
-import dance from "./dance2.jpg";
-import program from "./program.png";
-import chair from "./chair.JPG";
+import photo from "./img/photog.jpg";
+import dance from "./img/dance2.jpg";
+import program from "./img/program.png";
+import chair from "./img/chair.JPG";
 
 
 export default function WorkGrid() {

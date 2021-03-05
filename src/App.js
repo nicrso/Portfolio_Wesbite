@@ -34,10 +34,3 @@ export default function App() {
   );
 }
 
-window.onload = () => {
-  const grid = document.querySelector('.altgrid');
-
-  const masonry = new Masonry(grid, {
-    itemSelector: '.grid-item',
-  });
-};
