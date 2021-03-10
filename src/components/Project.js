@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
+import { Link } from "react-router-dom";
+import photo from "./img/photog.jpg";
 
 export default function Project() {
     const [projectData, setProjectData] = useState(null);
@@ -7,70 +9,42 @@ export default function Project() {
     useEffect(() => {
         sanityClient.fetch(`*[_type == "project"]{
             title,
-            date,
-            place,
             description,
-            projectType,
-            Link,
-            tags
-        }`).then((data) => setProjectData(data))
+            image{
+                asset->{
+                    _id,
+                    url
+                },
+            }
+        }`)
+        .then((data) => setProjectData(data))
         .catch(console.error);
     }, []);
 
     return (
-        <main className="bg-white min-h-screen p-20">
-            <section className="container mx-auto">
-                <h1 className="text-5xl flex justify-center Roboto">
-                    My Projects
-                </h1>
-                <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-                    Welcome to my Projects Page
-                </h2>
-                <section className="grid grid-cols-2 gap-8">
-                    {projectData && projectData.map((project, index) => (
-                        <article className="relative rounded-lg shadow-xl bg-white p-16">
-                            <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text hover:text-blue-700">
-                            <a 
-                                href={project.link}
-                                alt={project.title}
-                                target="_blank"
-                                rel="no opener noreferrer"
-                                >
-                                {project.title}
-                                </a> 
-                            </h3>
-                            <div className="text-gray-500 text-xs space-x-4">
-                                <span>
-                                    <strong className="font-bold">Finished on</strong>:{" "}
-                                    {new Date(project.date).toLocaleDateString()}
-                                </span>
-                                <span>
-                                    <strong className="font-bold">Company</strong>:{" "}
-                                    {project.place}
-                                </span>
-                                <span>
-                                    <strong className="font-bold">Type</strong>:{" "}
-                                    {project.projectType}
-                                </span>
-                                <p className="my-6 text-lg text-gray-700 leading-relaxed">
-                                    {project.description}
-                                </p>
-                                <a 
-                                    href={project.link} 
-                                    rel="noopener noreferrer" 
-                                    target="_blank" 
-                                    className="text-blue-500 font-bold hover:text-blue-400"
-                                >
-                                    View the Project{" "}
-                                    <span role="img" aria-label="right pointer">
-                                        👉
-                                    </span>
-                                </a>
-                            </div>
-                        </article>
-                        ))}
-                </section>
+        <main className="bg-white min-h-screen p-6 pt-20">          
+            <section className="grid grid-cols-2 gap-4">
+                {projectData && projectData.map((project,index) => (
+                <div className="bg-white border rounded-lg shadow-xl">
+                    <div class="relative overflow-hidden pb-1/2">
+                        <img 
+                            className="h-full w-full object-cover"
+                            src={project.image.asset.url}
+                        >
+                        </img>
+                    </div>
+                    <div className="p-6">
+                        <h4 className="mt-1 font-semibold text-lg leading tight">
+                            {project.title}
+                        </h4>
+                        <div className="mt-1 text-p">
+                            {project.description}
+                        </div>
+                    </div>
+                </div>
+                ))}
             </section>
         </main>
-    )
+    );
 }
+

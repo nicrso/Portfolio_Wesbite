@@ -1,6 +1,5 @@
 import React, { useState, useEffect} from "react";
 import { Link } from "react-router-dom";
-import sanityClient from "../client.js";
 import photo from "./img/photog.jpg";
 import dance from "./img/dance2.jpg";
 import program from "./img/program.png";
@@ -8,20 +7,7 @@ import chair from "./img/chair.JPG";
 
 
 export default function WorkGrid() {
-    const [projectData, setProjectData] = useState(null);
 
-    useEffect(() => {
-        sanityClient.fetch(`*[_type == "project"]{
-            title,
-            date,
-            place,
-            description,
-            projectType,
-            Link,
-            tags
-        }`).then((data) => setProjectData(data))
-        .catch(console.error);
-    }, []);
 
     return (
         <main className="bg-white min-h-screen mx-auto p-2">
