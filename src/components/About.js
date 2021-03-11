@@ -51,7 +51,7 @@ export default function About() {
                                 className="hover:text-blue-600 underline"
                             >
                                 projects
-                            </NavLink>. I have a long history in the performing arts and visual arts, working under institutions such as the <em> Boston Ballet</em> and <em>Young Arts Foundation.</em> I believe that aspects of the arts are present in all fields and I hope to discover these intersections, pushing towards a more authentic, assessible world.   
+                            </NavLink>. I have a long history in the performing arts and visual arts, working under institutions such as the <em> Boston Ballet</em> and <em>Young Arts Foundation.</em> I believe that aspects of the arts are present in all fields and I hope to discover these intersections, pushing towards a more authentic, accessible world.   
                     </div>
                 </div>
             </div>
