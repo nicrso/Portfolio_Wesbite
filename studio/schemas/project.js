@@ -13,14 +13,14 @@ export default {
         },
         {
             name: "link",
-            type: "url",
+            type: "url"
         },
         {
             name: 'slug',
             title: 'Slug',
             type: 'slug',
             options: {
-              source: 'title',
+              source: 'name',
               maxLength: 96,
             },
         },

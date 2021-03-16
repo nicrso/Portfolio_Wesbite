@@ -1,9 +1,6 @@
 import { BrowserRouter, Route, Switch, Link, useParams, useRouteMatch } from "react-router-dom";
 import Home from "./components/Home";
-import Masonry from "masonry-layout";
 import About from "./components/About";
-import SinglePost from "./components/SinglePost";
-import Post from "./components/Post";
 import Project from "./components/Project";
 import NavBar from "./components/NavBar";
 import Work from "./components/Work";
@@ -19,8 +16,6 @@ export default function App() {
       <Switch>
         <Route component={Home} exact path='/' />
         <Route component={About} path='/about' />
-        <Route component={SinglePost} path='/post/:slug' />
-        <Route component={Post} path='/post' />
         <Route component={Project} path='/project' />
         <Route component={Photography} path='/work/photo' />
         <Route component={Design} path='/work/design'/>
